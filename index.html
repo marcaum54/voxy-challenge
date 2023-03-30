@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="https://cdn-prod.voxy.com/wp-content/uploads/2017/03/voxy_l.png">
+    </div>
+
+    <div class="container">
+
+        <div class="wrapper">
+            <form id="word-counter-form">
+                <h1 class="title">Word Counter</h1>
+                <h5 class="sub-title">
+                    Fill in the field below with the text you want to discover the number of words
+                </h5>
+
+                <div>
+                    <textarea name="field" class="form-control" cols="30" rows="10"></textarea>
+                    <small class="required-error">This field is required.</small>
+                </div>
+
+                <button class="button">Submit</button>
+            </form>
+
+            <div id="word-counter-result" class="hidden">
+                <h1 class="title">The entered text contains: <span class="quantity"></span> word(s)</h1>
+                <button class="button" id="word-counter-restart">Restart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
